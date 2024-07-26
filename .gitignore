@@ -36,3 +36,7 @@ obj/project.nuget.cache
 obj/PS3_XMB_Tools.csproj.nuget.dgspec.json
 obj/PS3_XMB_Tools.csproj.nuget.g.props
 obj/PS3_XMB_Tools.csproj.nuget.g.targets
+.vs/ProjectEvaluation/ps3_xmb_tools.metadata.v7.bin
+.vs/ProjectEvaluation/ps3_xmb_tools.projects.v7.bin
+.vs/PS3_XMB_Tools/DesignTimeBuild/.dtbcache.v2
+.vs/PS3_XMB_Tools/v17/.futdcache.v2
