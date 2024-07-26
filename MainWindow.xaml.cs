@@ -683,6 +683,12 @@ namespace PS3_XMB_Tools
                                     while (isMoreToRead);
                                 }
 
+                                var actualSize = new FileInfo(localPath).Length;
+                                if (totalBytes >= 0 && actualSize != totalBytes)
+                                {
+                                    throw new Exception($"File size mismatch: expected {totalBytes} bytes, got {actualSize} bytes.");
+                                }
+
                                 completedFiles++;
                                 UpdateProgressText(totalFiles, completedFiles);
                                 _logger.LogDebugInfo($"Downloaded file: {fileUrl}");
@@ -710,6 +716,7 @@ namespace PS3_XMB_Tools
                 await Task.WhenAll(tasks); // Wait for all downloads to complete
             }
         }
+
 
 
 
